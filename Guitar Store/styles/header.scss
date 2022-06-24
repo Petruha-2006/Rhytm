@@ -1,0 +1,41 @@
+header{
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 30px;
+    max-width: 563px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    .navbar{
+        max-width: 310px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(18, 18, 18, 0.4);
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    header{
+        right: 0;
+        margin: 0 auto;
+        justify-content: center;
+        .logotype{
+            display: none;
+        }
+        .navbar{
+            padding: 0 15px;
+        }
+    }
+}
